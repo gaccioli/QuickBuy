@@ -25,7 +25,7 @@ namespace QuickBuy.Dominio.Entidades
         public ICollection<ItemPedido> ItensPedido { get; set; }
 
 
-        //Implementar as Regras de Negocio 
+        //Implementar as Regras de Negocio  dentro do Validate
         public override void Validate()
         {
 

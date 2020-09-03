@@ -17,8 +17,21 @@ namespace QuickBuy.Dominio.Entidades
 
         public override void Validate()
         {
+            if (string.IsNullOrEmpty(Nome))
+                AdicionarCritica("O Campo nome é obrigatorio");
+
+            if (string.IsNullOrEmpty(SobreNome))
+                AdicionarCritica("O Campo Sobre Nome é obrigatorio");
+
+            if (string.IsNullOrEmpty(Senha))
+                AdicionarCritica("Senha não informada ou em não inserida");
+
+            if (string.IsNullOrEmpty(Email))
+                AdicionarCritica("O Campo Email é obrigatorio");
+
 
         }
+
 
 
     }
