@@ -10,7 +10,7 @@ namespace QuickBuy.Repositorio.Repositorios
         public Cliente()
         {
 
-            var usuarioRepositorio = new PedidoRepositorio();
+            var usuarioRepositorio = new UsuarioRepositorio();
             var produto = new Produto();
             var usuario = new Usuario();
 

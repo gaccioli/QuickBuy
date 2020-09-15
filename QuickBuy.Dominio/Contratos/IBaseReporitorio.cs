@@ -4,7 +4,7 @@ using System.Text;
 
 namespace QuickBuy.Dominio.Contratos
 {
-    public interface IBaseReporitorio<TEntity> : IDisposable, where TEntity : class
+    public interface IBaseReporitorio<TEntity> : IDisposable where TEntity : class
     {
 
         void Adicionar(TEntity entity);
