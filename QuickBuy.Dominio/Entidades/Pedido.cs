@@ -17,8 +17,7 @@ namespace QuickBuy.Dominio.Entidades
         public string Estado { get; set; }
         public string Cidade { get; set; }
         public string EnderecoCompleto { get; set; }
-        public string NumeroEndereco { get; set; }
-
+        public string NumeroEndereco { get; set; } 
         public int FormaPagamentoId { get; set; }
         public virtual FormaPagamento FormaPagamento { get; set; }
 

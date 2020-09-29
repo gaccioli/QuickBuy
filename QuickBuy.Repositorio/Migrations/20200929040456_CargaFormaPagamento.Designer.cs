@@ -9,7 +9,7 @@ using QuickBuy.Repositorio.Contexto;
 namespace QuickBuy.Repositorio.Migrations
 {
     [DbContext(typeof(QuickBuyContexto))]
-    [Migration("20200926230625_CargaFormaPagamento")]
+    [Migration("20200929040456_CargaFormaPagamento")]
     partial class CargaFormaPagamento
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

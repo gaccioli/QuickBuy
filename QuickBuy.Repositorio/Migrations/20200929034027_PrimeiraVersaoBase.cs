@@ -107,6 +107,21 @@ namespace QuickBuy.Repositorio.Migrations
                         onDelete: ReferentialAction.Restrict);
                 });
 
+            migrationBuilder.InsertData(
+                table: "FormaPagamento",
+                columns: new[] { "Id", "Descricao", "Nome" },
+                values: new object[] { 1, "Forma de pagamento Boleto", "Boleto" });
+
+            migrationBuilder.InsertData(
+                table: "FormaPagamento",
+                columns: new[] { "Id", "Descricao", "Nome" },
+                values: new object[] { 2, "Forma de pagamento Cartão de Crédito", "Cartao de Crédito" });
+
+            migrationBuilder.InsertData(
+                table: "FormaPagamento",
+                columns: new[] { "Id", "Descricao", "Nome" },
+                values: new object[] { 3, "Forma de pagamento Depósito", "Depósito" });
+
             migrationBuilder.CreateIndex(
                 name: "IX_ItensPedidos_PedidoId",
                 table: "ItensPedidos",
